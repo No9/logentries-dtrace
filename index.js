@@ -15,13 +15,16 @@ var prog = fs.readFileSync(__dirname + '/reqmon.d','utf8');
 dtp.strcompile(prog);
 dtp.go();
 
-dtp.consume(function (probe, rec) {
-	if (rec)
-		{
-		sys.puts('Started');
-		log.log("info", {"messagetype":"httprequest", "messagecontent":rec.data})
-		sys.puts(rec.data);
+setInterval(function () {
+		 dtp.consume(function (probe, rec) {
+			if (rec)
+				{
+				sys.puts('Started');
+				log.log("info", {"messagetype":"httprequest", "messagecontent":rec.data})
+				sys.puts(rec.data);
 				
-		}
-});
+				}
+		});
+	   }, 1000);
+
 
