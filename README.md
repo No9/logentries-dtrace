@@ -47,3 +47,25 @@ Install the simple http server to test monitoring
 You should now be able to open the a default website on your server 
 http://YOUR.IP.ADDRESS.HERE/
 
+Now configure DTrace 
+```
+# wget https://raw.github.com/joyent/node/v0.8.11-release/src/node.d --no-check-certificate
+```
+
+And mv the file to /home/admin/dtrace
+
+```
+# mkdir /home/admin/dtrace
+# mv node.d /home/admin/dtrace/node.d
+```
+
+You should now be able to run D-Trace Against Log Entries
+```
+# node singlelatency.js
+```
+
+And then from a machine with apache benchmark installed. 
+```
+# ab -n10000 http://YOUR.IP.ADDRESS.HERE
+```
+
