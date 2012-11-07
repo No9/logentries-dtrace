@@ -9,22 +9,35 @@ var log = logentries.logger({
   token:'f4fd6588-d90b-43f2-b0e5-6a4a0ca4defb'
 });
 
-var value = "testdata"
-//var prog = 'BEGIN { trace("{\'helloworld\':\'' + value + '\'}"); }\n'
-var prog = fs.readFileSync(__dirname + '/reqmon.d','utf8'); 
+var prog = fs.readFileSync(__dirname + '/singlelatency.d','utf8'); 
 dtp.strcompile(prog);
 dtp.go();
 
+var syscalls = {};
+  var keys = [];
+
+  var pad = function (val, len)
+  {
+          var rval = '', i, str = val + '';
+
+          for (i = 0; i < Math.abs(len) - str.length; i++)
+                  rval += ' ';
+
+          rval = len < 0 ? str + rval : rval + str;
+
+          return (rval);
+  };
+
 setInterval(function () {
-		 dtp.consume(function (probe, rec) {
-			if (rec)
+console.log("consuming");		 
+	dtp.consume(function (probe, rec) {
+		if (rec)
 				{
-				sys.puts('Started');
-				log.log("info", {"messagetype":"httprequest", "messagecontent":rec.data})
-				sys.puts(rec.data);
-				
+          //127.0.0.1 - frank [10/Oct/2000:13:55:36 -0700] "GET /apache_pb.gif HTTP/1.0" 200 2326
+					log.log("info", rec.data.toString());
+          console.log(rec.data.toString());
 				}
-		});
-	   }, 1000);
+	});
+}, 1000);
 
 

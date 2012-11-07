@@ -10,7 +10,6 @@
 	{
 		this->t = ts[args[0]->remoteAddress, args[0]->remotePort];
 		@[url[this->t], args[0]->remoteAddress] = quantize((timestamp-this->t)/1000);
-		trace(stringof(url[this->t]));
 		ts[args[0]->remoteAddress, args[0]->remotePort] = 0;
 	}
 
