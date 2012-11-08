@@ -1,0 +1,30 @@
+{
+  "name": "logentries-dtrace",
+  "description": "A wrapper to emit dtrace results to logentries",
+  "tags": [
+    "dtrace",
+    "logentries"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Anton Whalley",
+    "email": "anton.whalley@vodafone.ie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/No9/logentries-dtrace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/No9/logentries-dtrace/issues"
+  },
+  "dependencies": {
+    "dtrace-provider": "0.2.4",
+    "logentries-node-libdtrace": "0.0.3",
+    "node-logentries": "0.0.2"
+  },
+  "devDependencies" : {
+    },
+    "scripts" : {
+        "test" : "node test/host.js"
+  }
+}
