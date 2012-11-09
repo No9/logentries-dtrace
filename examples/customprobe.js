@@ -1,1 +1,1 @@
-var logdtrace = require("../")('f4fd6588-d90b-43f2-b0e5-6a4a0ca4defb', __dirname + '/customprobe.d', 1000)
+var logdtrace = require("../")('bba24bc4-dac5-4a7b-b2ae-aa40e30e7ada', __dirname + '/customprobe.d', 1000)

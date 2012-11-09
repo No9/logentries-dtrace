@@ -56,7 +56,12 @@ Edit the logkey in the .js file you wish to run.
 You should now be able to run D-Trace Against Log Entries
 
 ```
-# node singlelatency.js
+# node customprobe.js
+```
+or
+```
+# svccfg import customprobe-service-manifest.xml
+# svccfg enable logentries-customprobe-service
 ```
 
 And then from a machine with apache benchmark installed. 

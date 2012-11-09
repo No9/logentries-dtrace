@@ -1,1 +1,1 @@
-var logdtrace = require("../")('f4fd6588-d90b-43f2-b0e5-6a4a0ca4defb', __dirname + '/singlelatency.d', 1000)
+var logdtrace = require("../")('b2c3ec1-7991-4471-9b8c-712639f4a900', __dirname + '/singlelatency.d', 1000)
