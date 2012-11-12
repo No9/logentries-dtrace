@@ -1,6 +1,10 @@
 #logentries-dtrace
 
+This is a library to send the output of DTrace scripts to (www.logentries.com)[www.logentries.com]. In order to utilise the library you will need to create an account on Logentries. (They are available from free!) 
+
 ## Prerequisites
+
+(A logentries account)[www.logentries.com]
 
 gmake
  
@@ -52,7 +56,7 @@ And mv the file to /home/admin/dtrace
 # mkdir /home/admin/dtrace
 # mv node.d /home/admin/dtrace/node.d
 ```
-Edit the logkey in the .js file you wish to run.
+Create a log on logentries and add the logkey in the .js file you wish to run.
 You should now be able to run D-Trace Against Log Entries
 
 ```
