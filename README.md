@@ -24,7 +24,7 @@ npm install logentries-dtrace
 
 ## Usage 
 ```
-var logdtrace = require("logentries-dtrace")('logentries-logkey', locationofdtracefile, interval)
+var logdtrace = require("logentries-dtrace")('LOGENTRIES_TOKEN', locationofdtracefile, interval)
 ```
 See examples folder for more details
 
@@ -56,7 +56,7 @@ And mv the file to /home/admin/dtrace
 # mkdir /home/admin/dtrace
 # mv node.d /home/admin/dtrace/node.d
 ```
-Create a log on logentries and add the logkey in the .js file you wish to run.
+Create a logfile on logentries of source_type `Token TCP` and add the token printed in green in the .js file you wish to run.
 You should now be able to run D-Trace Against Log Entries
 
 ```
