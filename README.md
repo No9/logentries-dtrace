@@ -1,10 +1,10 @@
 #logentries-dtrace
 
-This is a library to send the output of DTrace scripts to [Logentries](www.logentries.com). In order to utilise the library you will need to create an account on Logentries. (They are available from free!) 
+This is a library to send the output of DTrace scripts to [Logentries](https://logentries.com). In order to utilise the library you will need to create an account on Logentries. (They are available from free!) 
 
 ## Prerequisites
 
-[A logentries account](www.logentries.com)
+[A logentries account](https://logentries.com)
 
 gmake
  
