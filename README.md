@@ -4,7 +4,7 @@ This is a library to send the output of DTrace scripts to [Logentries](https://l
 
 ## Prerequisites
 
-[A logentries account](https://logentries.com)
+A [Logentries](https://logentries.com) account
 
 gmake
  
