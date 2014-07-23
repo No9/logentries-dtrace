@@ -13,7 +13,7 @@ $ npm install logentries-dtrace
 ```
 
 ## Usage 
-```
+```js
 var logdtrace = require("logentries-dtrace")('LOGENTRIES_TOKEN', locationofdtracefile, interval)
 ```
 
@@ -24,8 +24,8 @@ See examples folder for more details
 As root
 
 ```bash
-# cd node_modules/logentries-dtrace/examples
-# node http-server
+$ cd node_modules/logentries-dtrace/examples
+$ sudo node http-server
 ```
 
 You should now be able to open the a default website on your server 
@@ -34,8 +34,8 @@ http://localhost/
 Create a logfile on logentries of source_type `Token TCP` and add the token printed in green in the .js file you wish to run.
 You should now be able to run D-Trace Against Log Entries
 
-```
-# node singlelatency.js
+```bash
+$ sudo node singlelatency.js
 ```
 
 And then with apache benchmark installed.
