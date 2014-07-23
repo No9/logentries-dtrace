@@ -5,7 +5,7 @@
     "dtrace",
     "logentries"
   ],
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Anton Whalley",
     "email": "anton.whalley@vodafone.ie"
@@ -18,13 +18,11 @@
     "url": "https://github.com/No9/logentries-dtrace/issues"
   },
   "dependencies": {
-    "dtrace-provider": "0.2.4",
-    "logentries-node-libdtrace": "0.0.3",
-    "node-logentries": "0.0.2"
+    "libdtrace": "0.0.3",
+    "node-logentries": "^0.1.4"
   },
-  "devDependencies" : {
-    },
-    "scripts" : {
-        "test" : "node test/host.js"
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test/host.js"
   }
 }

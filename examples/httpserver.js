@@ -12,6 +12,6 @@ http.createServer(function (req, res) {
     return ["request fired", "some data"];
 	});
   res.end('Hello World\n');
-}).listen(80, '37.153.97.39');
+}).listen(80);
 //Replace the IP Above and below with your machines IP address
-console.log('Server running at http://37.153.97.39/');
+console.log('Server running at http://localhost/');
