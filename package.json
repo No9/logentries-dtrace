@@ -18,6 +18,7 @@
     "url": "https://github.com/No9/logentries-dtrace/issues"
   },
   "dependencies": {
+    "dtrace-provider": "^0.2.8",
     "libdtrace": "0.0.3",
     "node-logentries": "^0.1.4"
   },
