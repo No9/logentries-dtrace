@@ -14,14 +14,15 @@ $ npm install logentries-dtrace
 
 ## Usage 
 ```js
-var logdtrace = require("logentries-dtrace")('LOGENTRIES_TOKEN', locationofdtracefile, interval)
+var logdtrace = require("logentries-dtrace")
+    ('LOGENTRIES_TOKEN', locationofdtracefile, interval)
 ```
 
 See examples folder for more details
 
 ## Running The HTTP Example
 
-As root
+In the directory you have installed the module:
 
 ```bash
 $ cd node_modules/logentries-dtrace/examples
